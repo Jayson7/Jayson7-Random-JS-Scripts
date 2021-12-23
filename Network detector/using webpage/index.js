@@ -1,16 +1,19 @@
 var networkInformation = navigator.connection;
-var effectiveType = NetworkInformation.effectiveType;
+
 const speed = networkInformation.downlink;
-var type = navigator.connection.type;
-var infobox = document.querySelectorAll(".info-box div")[0];
+
+var infobox1 = document.querySelectorAll(".info-box div")[0];
+var infobox2 = document.querySelectorAll(".info-box div")[1];
 
 outputInfo = () => {
-    infobox.textContent = speed;
-    console.log(infobox);
+    infobox1.textContent = "Speed : " + speed;
+    infobox2.textContent =
+        "Network Type : " + networkInformation["effectiveType"];
+    console.log(networkInformation);
 };
 document.addEventListener("load", outputInfo());
 
 networkInformation.addEventListener("onchange", () => {
     outputInfo();
-    console.log(infobox);
+    // console.log(infobox1);
 });
