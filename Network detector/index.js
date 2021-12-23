@@ -5,6 +5,18 @@
 // const speed = networkInformation.downlink;
 // console.log(speed);
 
+// Get the connection type.
+// var type = navigator.connection.type;
+
+// function changeHandler(e) {
+//    // Handle change of connection type here.
+// }
+
+// // Register for event changes:
+// navigator.connection.onchange = changeHandler;
+
+// // Another way: navigator.connection.addEventListener('change', changeHandler);
+
 function logConnectionType() {
     var connectionType = "not supported";
     var downlinkMax = "not supported";
