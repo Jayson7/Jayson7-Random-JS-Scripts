@@ -12,8 +12,11 @@ outputInfo = () => {
     console.log(networkInformation);
 };
 document.addEventListener("load", outputInfo());
-
-networkInformation.addEventListener("onchange", () => {
+// setInterval(() => {
+//     outputInfo();
+// }, 10);
+networkInformation.addEventListener("change", () => {
     outputInfo();
+    window.location.reload();
     // console.log(infobox1);
 });
