@@ -4,6 +4,8 @@
 
 // const speed = networkInformation.downlink;
 // console.log(speed);
+// rtt = NetworkInformation.rtt
+// var type = netInfo.type
 
 // Get the connection type.
 // var type = navigator.connection.type;
